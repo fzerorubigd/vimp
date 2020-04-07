@@ -25,3 +25,15 @@
 [submodule "dist/start/auto-pairs"]
 	path = dist/start/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "dist/start/supertab"]
+	path = dist/start/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "dist/start/sensible"]
+	path = dist/start/sensible
+	url = https://tpope.io/vim/sensible.git
+[submodule "dist/start/fzf"]
+	path = dist/start/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "dist/start/fzf.vim"]
+	path = dist/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
