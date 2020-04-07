@@ -37,3 +37,15 @@
 [submodule "dist/start/fzf.vim"]
 	path = pack/dist/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/dist/start/eunuch"]
+	path = pack/dist/start/eunuch
+	url = https://tpope.io/vim/eunuch.git
+[submodule "pack/dist/start/surround"]
+	path = pack/dist/start/surround
+	url = https://tpope.io/vim/surround.git
+[submodule "pack/dist/start/editorconfig-vim"]
+	path = pack/dist/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "pack/dist/start/ale"]
+	path = pack/dist/start/ale
+	url = https://github.com/dense-analysis/ale.git

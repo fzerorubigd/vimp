@@ -1,5 +1,14 @@
 syntax on
 
+" Put these lines at the very end of your vimrc file.
+"
+" " Load all plugins now.
+" " Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" " Load all of the helptags now, after plugins have been loaded.
+" " All messages and errors will be ignored.
+silent! helptags ALL
+
 set background=dark
 colorscheme solarized8
 let g:rainbow_active = 1
@@ -16,7 +25,8 @@ set fileencoding=utf-8
 set number
 
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
-autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd Filetype go setlocal tabstop=2 shiftwidth=2 softtabstop=2
+
 " ts - show existing tab with 4 spaces width
 " sw - when indenting with '>', use 4 spaces width
 " sts - control <tab> and <bs> keys to match tabstop
@@ -43,6 +53,9 @@ set backspace=indent,eol,start
 " start   allow backspacing over the start of insert; CTRL-W and CTRL-U
 "        stop once at the start of insert.
 
+let g:ale_go_bingo_executable = 'gopls'
+let g:ale_completion_enabled = 0
+let g:ale_linters = { 'go': ['gofmt', 'golint', 'go vet', 'gopls']  }
 
 " go-vim plugin specific commands
 " Also run `goimports` on your current file on every save
@@ -52,10 +65,15 @@ let g:go_fmt_command = "goimports"
 " Status line types/signatures.
 let g:go_auto_type_info = 1
 
+":nnoremap <C-d> :GoDeclsDir<CR>
+autocmd FileType go map <buffer> <C-d> :GoDeclsDir<CR>
 "au filetype go inoremap <buffer> . .<C-x><C-o>
 
 " If you want to disable gofmt on save
 " let g:go_fmt_autosave = 0
+
+"fzf 
+:nnoremap <C-f> :Files<CR>
 
 
 " NERDTree plugin specific commands
@@ -92,3 +110,5 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
