@@ -1,39 +1,39 @@
 [submodule "dist/start/nerdtree"]
-	path = dist/start/nerdtree
+	path = pack/dist/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "dist/start/nerdtree-git-plugin"]
-	path = dist/start/nerdtree-git-plugin
+	path = pack/dist/start/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
 [submodule "dist/start/vim-airline"]
-	path = dist/start/vim-airline
+	path = pack/dist/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "dist/start/vim-fugitive"]
-	path = dist/start/vim-fugitive
+	path = pack/dist/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "plugins/start/vim-go"]
-	path = plugins/start/vim-go
+	path = pack/plugins/start/vim-go
 	url = https://github.com/fatih/vim-go.git
 [submodule "themes/opt/solarized8"]
-	path = themes/opt/solarized8
+	path = pack/themes/opt/solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
 [submodule "eyecandy/start/vim-rainbow"]
-	path = eyecandy/start/vim-rainbow
+	path = pack/eyecandy/start/vim-rainbow
 	url = https://github.com/frazrepo/vim-rainbow.git
 [submodule "dist/start/vim-gitgutter"]
-	path = dist/start/vim-gitgutter
+	path = pack/dist/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "dist/start/auto-pairs"]
-	path = dist/start/auto-pairs
+	path = pack/dist/start/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
 [submodule "dist/start/supertab"]
-	path = dist/start/supertab
+	path = pack/dist/start/supertab
 	url = https://github.com/ervandew/supertab.git
 [submodule "dist/start/sensible"]
-	path = dist/start/sensible
+	path = pack/dist/start/sensible
 	url = https://tpope.io/vim/sensible.git
 [submodule "dist/start/fzf"]
-	path = dist/start/fzf
+	path = pack/dist/start/fzf
 	url = https://github.com/junegunn/fzf.git
 [submodule "dist/start/fzf.vim"]
-	path = dist/start/fzf.vim
+	path = pack/dist/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
