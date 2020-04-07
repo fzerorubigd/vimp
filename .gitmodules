@@ -1,0 +1,15 @@
+[submodule "dist/start/nerdtree"]
+	path = dist/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "dist/start/nerdtree-git-plugin"]
+	path = dist/start/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "dist/start/vim-airline"]
+	path = dist/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "dist/start/vim-fugitive"]
+	path = dist/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "plugins/start/vim-go"]
+	path = plugins/start/vim-go
+	url = https://github.com/fatih/vim-go.git
