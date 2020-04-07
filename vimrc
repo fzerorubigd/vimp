@@ -1,5 +1,8 @@
 syntax on
-colo pablo
+
+set background=dark
+colorscheme solarized8
+let g:rainbow_active = 1
 
 " Flash screen instead of beep sound
 set visualbell

@@ -13,3 +13,15 @@
 [submodule "plugins/start/vim-go"]
 	path = plugins/start/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "themes/opt/solarized8"]
+	path = themes/opt/solarized8
+	url = https://github.com/lifepillar/vim-solarized8.git
+[submodule "eyecandy/start/vim-rainbow"]
+	path = eyecandy/start/vim-rainbow
+	url = https://github.com/frazrepo/vim-rainbow.git
+[submodule "dist/start/vim-gitgutter"]
+	path = dist/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "dist/start/auto-pairs"]
+	path = dist/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
