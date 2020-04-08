@@ -49,3 +49,6 @@
 [submodule "pack/dist/start/ale"]
 	path = pack/dist/start/ale
 	url = https://github.com/dense-analysis/ale.git
+[submodule "pack/dist/vim-nerdtree-tabs"]
+	path = pack/dist/start/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git

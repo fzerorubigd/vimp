@@ -1,6 +1,6 @@
 syntax on
 
-" Put these lines at the very end of your vimrc file.
+" Put these lines at the very end of your vimrc file. put
 "
 " " Load all plugins now.
 " " Plugins need to be added to runtimepath before helptags can be generated.
@@ -8,6 +8,15 @@ packloadall
 " " Load all of the helptags now, after plugins have been loaded.
 " " All messages and errors will be ignored.
 silent! helptags ALL
+set mouse=a  		" Mouse is working inside terminal now
+set hlsearch            " Highlight all matched search
+set ignorecase          " Ignore the case in search 
+set smartcase           " ... only for lower case search, it's case sensitive with upper
+set incsearch
+set gdefault 		" Do not set the g in replace :s/foo/bar/ <- No g
+set magic
+
+nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 
 set background=dark
 colorscheme solarized8
@@ -77,7 +86,7 @@ autocmd FileType go map <buffer> <C-d> :GoDeclsDir<CR>
 
 
 " NERDTree plugin specific commands
-:nnoremap <C-n> :NERDTreeToggle<CR>
+:nnoremap <C-n> :NERDTreeTabsToggle<CR>
 "autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -112,3 +121,7 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
+" My bindings 
+"
+:tnoremap <Esc> <C-\><C-n>
