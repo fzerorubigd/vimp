@@ -55,3 +55,6 @@
 [submodule "pack/dist/start/vim-template"]
 	path = pack/dist/start/vim-template
 	url = https://github.com/aperezdc/vim-template.git
+[submodule "pack/plugins/start/vim-nix"]
+	path = pack/plugins/start/vim-nix
+	url = https://github.com/LnL7/vim-nix.git
