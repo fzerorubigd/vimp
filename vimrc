@@ -1,5 +1,4 @@
 syntax on
-
 " Put these lines at the very end of your vimrc file. put
 "
 " " Load all plugins now.
@@ -34,7 +33,7 @@ set fileencoding=utf-8
 set number
 
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
-autocmd Filetype go setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype go,make setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 " ts - show existing tab with 4 spaces width
 " sw - when indenting with '>', use 4 spaces width
@@ -76,6 +75,9 @@ let g:go_auto_type_info = 1
 
 ":nnoremap <C-d> :GoDeclsDir<CR>
 autocmd FileType go map <buffer> <C-d> :GoDeclsDir<CR>
+"autocmd FileType go map <buffer> <C-m><C-m> :GoDef<CR>
+"autocmd FileType go map <buffer> <C-m> :GoDefPop<CR>
+
 "au filetype go inoremap <buffer> . .<C-x><C-o>
 
 " If you want to disable gofmt on save
@@ -87,6 +89,7 @@ autocmd FileType go map <buffer> <C-d> :GoDeclsDir<CR>
 
 " NERDTree plugin specific commands
 :nnoremap <C-n> :NERDTreeTabsToggle<CR>
+:nnoremap <F5> :NERDTreeFind<CR>
 "autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 

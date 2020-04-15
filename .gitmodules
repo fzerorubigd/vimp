@@ -52,3 +52,6 @@
 [submodule "pack/dist/vim-nerdtree-tabs"]
 	path = pack/dist/start/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "pack/dist/start/vim-template"]
+	path = pack/dist/start/vim-template
+	url = https://github.com/aperezdc/vim-template.git
